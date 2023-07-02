@@ -1,6 +1,6 @@
-flask
-python-dotenv
-validator
-pymysql
-requests
-flask-migration
+flask==2.3.2
+python-dotenv==1.0.0
+validator==0.7.1
+pymysql==1.0.3
+requests==2.31.0
+flask-migrate==4.0.4
