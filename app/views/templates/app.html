@@ -4,18 +4,60 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+	<link rel="stylesheet" href="{{ url_for('static', filename = 'bootstrap/css/bootstrap.min.css') }}">
+
 	<title>Latihan</title>
 
 </head>
-<body style="display: flex;">
+<body class="d-flex">
 	<div class="col-2" style="padding: 24px;">
-		<div class="col-12" style="border: 1px solid gray; padding: 12px;">
+		<div class="col-12 border rounded-2 vh-100" style="padding: 12px;">
 
 		</div>
 	</div>
 
-	<div class="col-10">
+	<div class="col-10 d-flex flex-column align-items-center px-4">
+		<div class="" style="height: 80px;">
 
+		</div>
+
+		<div class="mt-5 col-12">
+			<form action="">
+				<div class="col-12 d-flex flex-column">
+					<div class="w-100 d-flex justify-content-center">
+						<h3>Pendaftaran Masuk Member Buku</h3>
+					</div>
+
+					<div class="col-12 d-flex gap-4 mt-5">
+						<div class="form-group w-100 mt-4"> 
+						  <label for="nama">Nama Lengkap</label>
+						  <input type="text" name="" id="nama" class="form-control" placeholder="masukkan nama anda">
+						</div>
+						
+						<div class="form-group w-100 mt-4">
+						  <label for="alamat">Alamat Lengkap</label>
+						  <input type="text" name="" id="alamat" class="form-control" placeholder="masukkan alamat anda">
+						</div>
+					</div>
+	
+					<div class=" col-12 d-flex w-100 gap-4">
+						<div class="form-group w-50 mt-4">
+						  <label for="notelp">No Handphone</label>
+						  <input type="text" name="" id="notelp" class="form-control" placeholder="masukkan no telephone anda">
+						</div>
+		
+						<div class="form-group w-100 mt-4">
+						  <label for="alasan">Alasan Anda Gabung</label>
+						  <input type="text" name="" id="alasan" class="form-control" placeholder="masukkan alasan anda">
+						</div>
+					</div>
+
+					<div class="w-100 mt-4 d-flex justify-content-end">
+						<button class="btn btn-info" style="color: white;">Simpan Jawaban</button>
+					</div>
+				</div>
+			</form>
+		</div>
 	</div>
 </body>
 </html>
