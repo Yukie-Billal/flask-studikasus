@@ -7,4 +7,15 @@ class User(db.Model) :
 
 	# def __repr__(self) :
 	# 	return '<User = {}>'.format(self.name)
+	def delete(user:object) -> bool:
+		db.session.delete(user)
 
+	def save() :
+		db.session.commit()
+
+	def update(self, nama, email) :
+		self.nama = nama
+		self.email = email
+	
+	def add(self,nama:str,email:str) :
+		db.session.add(self(nama=nama,email=email))

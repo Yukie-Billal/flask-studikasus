@@ -14,5 +14,5 @@ migrate = Migrate(app, db)
 
 app.template_folder = get_env('VIEW_FOLDER')
 
-from .models import user
+from . import models
 from . import routes
