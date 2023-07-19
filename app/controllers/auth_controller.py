@@ -14,6 +14,7 @@ def add(data) :
 	db.session.add(user_model(nama=nama, email=email))
 	user_model.add(nama,email)
 	db.session.commit()
+	# Coba dua akun di local git. biar santai push tanpa masalah
 
 def edit(data) :
 	id = data['id']
